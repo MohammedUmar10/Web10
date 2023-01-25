@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/static/logo.jfif" class="logo">
+    <title>Drive</title>
+    <script src="app.js"></script>
+    <style>
+        .logo {
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+
+        #navbar {
+            background-color: brown;
+        }
+
+        .navbut1:hover {
+            background-color: rgb(184, 164, 164);
+        }
+
+        .fp1 {
+            text-align: center;
+        }
+
+        .footer {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            background-size: 100%;
+        }
+
+        .navbut1 {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+                    <a href="/index.html"><button type="button" style="color: white;" class="btn nav-link navbut1">
+                            <h4>Home</h4>
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+                    <a href="/about.html"><button type="button" style="color: white;" class="btn nav-link navbut1">
+                            <h4>About</h4>
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services.html"><button type="button" style="color: white;" class="btn nav-link navbut1">
+                            <h4>Services</h4>
+                        </button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html"><button type="button" style="color: white;" class="btn nav-link navbut1">
+                            <h4>Contact</h4>
+                        </button></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!-- <img src="/static/logo.jfif" height="50px" width="50px" class="logo">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                <img src="/static/logo.jfif" height="50px" width="50px" class="logo">
+              </form>
+        </div>
+    </nav>
+    <section class="fm" style="background-color: rgba(128, 128, 128, 0.233);">
+        <h1 style="font-size: 60px; color: red; text-align: center;">REGISTRATION</h1>
+        <br><br><br>
+        <form method="post" action="/form_registration" style="text-align: left;" class="container" id="form_registration">
+            <h4>
+                <b style="text-align: left;">Name</b>
+                <br>
+            <div class="row">
+                
+              <div class="col">
+                
+                <input type="text" id="firstname" name="firstname" class="form-control" style="width: 400px; margin-right: 0px;" placeholder="First name" required>
+                First <br><br><br>
+              </div>
+              <div class="col">
+                <input type="text" id="lastname" name="lastname" class="form-control" style="width: 400px; margin-left: 0px;" placeholder="Last name" required>
+                Last
+              </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" name="email" style="width: 400px;" required id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small><br><br>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" style="width: 400px;" name="password" required id="password" aria-describedby="passwordHelp" placeholder="Password">
+            </div>
+            <div style="text-align:left;">
+                <br>
+                <input type="submit" style="background-color: blue; color: white; padding: 10px; padding-left: 40px; padding-right: 40px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; border: 2px solid black; border-radius: 300px;">
+            </div>
+            </h4>
+            <div id="content"></div>
+          </form>
+          <br><br>
+        <div style="text-align:left; margin-left: 30px;">
+            <br>
+            <a href="details.html"><button style="background-color: blue; color: white; padding: 10px; padding-left: 40px; padding-right: 40px; font-family: Arial, Helvetica, sans-serif; font-size: 20px; border: 2px solid black; border-radius: 300px;">SEE DETAILS</button></a>
+        </div>  
+        <br><br>
+    </section>
+    <section class="footer">
+        <h2 class="fp1">Site Made by Umar</h2><br>
+        <h5 class="fp1">Copyright &#169; 2023</h5><br>
+      </section>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+  </html>
